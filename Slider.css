@@ -1,0 +1,119 @@
+body {
+  z-index: -1;
+  max-width: 1200px;
+  background: #131313;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+button {
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+  cursor: pointer;
+}
+.grid {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: 1fr repeat(4, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-template-areas:
+    "a a b c d"
+    "e e f f f"
+    "g g f f f"
+    "h i f f f"
+    "j k f f f"
+    "l l f f f";
+  margin-top: 105px;
+}
+.location {
+  font-family: "Yeseva One", cursive;
+  font-size: 14px;
+  color: #ffffff4d;
+  margin-bottom: 50px;
+  text-decoration: underline;
+  text-align: start;
+}
+.a {
+  grid-area: a;
+}
+.b {
+  grid-area: b;
+}
+.c {
+  grid-area: c;
+}
+.d {
+  grid-area: d;
+}
+.e {
+  grid-area: e;
+}
+.f {
+  grid-area: f;
+  background-image: url(img/rostov-on-don-admiral.jpg);
+  width: 679px;
+  height: 482px;
+}
+.g {
+  grid-area: g;
+}
+.h {
+  grid-area: h;
+}
+.i {
+  grid-area: i;
+  margin-right: 90px;
+}
+.k {
+  grid-area: k;
+  margin-right: 90px;
+}
+.l {
+  grid-area: l;
+}
+.m {
+  grid-area: m;
+}
+.projects {
+  font-family: "Yeseva One", cursive;
+  font-size: 27px;
+  color: #e3b873;
+  margin: 0 90px 0 0;
+}
+.product_description {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 14px;
+  color: #ffffff;
+  margin: 0 50px 0 0;
+}
+.specTitle {
+  font-family: "Yeseva One", cursive;
+  font-size: 18px;
+  color: #e3b873;
+}
+.specValue {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 13px;
+  color: #ffffff;
+}
+.switch {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  align-items: flex-end;
+}
+.dot {
+  z-index: 1;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ffffff4d;
+  margin-bottom: 5px;
+}
+.loc_active {
+  color: #e3b873;
+}
+.active {
+  background-color: #ffffff;
